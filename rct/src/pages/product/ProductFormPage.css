@@ -1,0 +1,47 @@
+.form-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.form-page-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s;
+}
+
+.back-btn:hover {
+  color: #111;
+}
+
+.form-page-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form-page-error {
+  background: #fcebeb;
+  color: #a32d2d;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.form-page-loading {
+  text-align: center;
+  padding: 80px;
+  color: #aaa;
+  font-size: 14px;
+}

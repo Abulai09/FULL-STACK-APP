@@ -1,0 +1,122 @@
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 24px;
+}
+
+/* ✅ Поиск по центру */
+.search-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.search-form input {
+  flex: 1;
+  height: 38px;
+  border: 0.5px solid #d0d0d0;
+  border-radius: 8px;
+  padding: 0 14px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.search-form input:focus { border-color: #999; }
+
+.search-form button {
+  height: 38px;
+  padding: 0 20px;
+  border-radius: 8px;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.search-form button:hover { opacity: 0.8; }
+
+/* ✅ Категории + результаты в одну строку */
+.cats-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cat-btn {
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 0.5px solid #e0e0e0;
+  background: #fff;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.cat-btn:hover { border-color: #999; color: #111; }
+
+.cat-btn.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.results-info {
+  font-size: 13px;
+  color: #aaa;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.loading, .empty {
+  text-align: center;
+  padding: 60px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 0.5px solid #e0e0e0;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.pagination button:hover:not(:disabled) { border-color: #999; }
+.pagination button.active { background: #111; color: #fff; border-color: #111; }
+.pagination button:disabled { color: #ccc; cursor: not-allowed; }
